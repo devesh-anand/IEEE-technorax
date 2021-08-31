@@ -1,12 +1,125 @@
-.events{
-  justify-content: center;
-  align-items: center;
+body{
+  margin: 0px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.headings{
+  margin-top: 7rem;
+  margin-bottom: 35px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
-  margin-left: 60px;
-  margin-right: 60px;
+  font-size: 3.5rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: black;
+  background-image: url('homepage.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 80%;
+  height: 49rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top::before {
+  position: absolute;
+  right: 0%;
+  background: #1B1AFE;
+  opacity: 0.8;
+  height: 100%;
+  width: 45%;
+  content: "";
+}
+
+.thead {
+  position: absolute;
+  right: 7%;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.top-heading {
+  color: white;
+  margin-bottom: 0rem;
+  margin-top: 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.5rem;
+}
+
+.tech-img {
+  width: 25rem;
+  position: absolute;
+  right: 9.5%;
+  bottom: 24%
+}
+
+.rec-reg {
+  background-color: black;
+  position: absolute;
+  right: 17%;
+  margin-top: 34rem;
+  background-color: black;
+  padding: 1.2rem;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+}
+
+.rec-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.event-heading {
+  color: #1B1AFE;
+}
+
+.sponsors {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.sponsor-rows{
+  display: flex;
+  flex-direction: column
+}
+
+.srow {
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: #1B1AFE;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.sponsor-image {
+  margin-right: 1.2rem;
+  height: 13rem;
+}
+
+.events{
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .event-header{
@@ -24,14 +137,6 @@
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 60px;
-}
-
-.headings{
-  margin-bottom: 35px;
-}
-
-.event-heading {
-  color: #1B1AFE;
 }
 
 .header-content {
