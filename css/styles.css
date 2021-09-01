@@ -6,32 +6,90 @@ body{
   display: none;
 }
 
-.contain {
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-right: 0px;
-  margin-left: 0px;
+.sections {
+  margin: 0;
+  background-color: white;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
-.fheadings{
-  margin-top: 11rem;
-  margin-bottom: 35px;
+.headings{
+  padding-top: 10rem;
+  margin-bottom: 2.2rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 3.5rem;
 }
 
+.head {
+  top: 0;
+  left: 0;
+  position: sticky;
+}
+
+.main {
+  background-color:#151419;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #151419;
+  opacity: 0.8;
+}
+
+.navbar-icons {
+  margin-top: 0.625rem;
+  margin-bottom: 0.31rem;
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+}
+
+.navline {
+  margin: 0px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#menu-items {
+  display: none;
+}
+
+#menu-icon {
+  cursor: pointer;
+}
+
+#menu-icon2 {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-item {
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0px;
+  margin-left: 3.75rem;
+  margin-top: 1.5rem;
+}
+
 .top {
+  background-image: url('homepage.png');
+  background-position-y: 72%;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: black;
-  background-image: url('homepage.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 80%;
-  height: 49rem;
+  height: 45rem;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -77,15 +135,22 @@ body{
 .rec-reg {
   background-color: black;
   position: absolute;
-  right: 17%;
-  margin-top: 34rem;
+  right: 16%;
+  margin-top: 29.5rem;
   background-color: black;
-  padding: 1.2rem;
+  padding: 1.1rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
   color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 0.05rem;
+  cursor: pointer;
+}
+
+.rec-reg::before {
+  content: attr(data-hover);
 }
 
 .rec-text {
@@ -97,9 +162,91 @@ body{
   color: #1B1AFE;
 }
 
-.sponsors {
-  padding-left: 60px;
-  padding-right: 60px;
+.schedule-tables{
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  background: #1B1AFE;
+  box-shadow: 0px 4px 10px #74756F;
+  width: 100%;
+  height: fit-content;
+  padding: 1.25rem 1.875rem 1.25rem 1.875rem;
+  margin-bottom: 2.2rem;
+}
+
+#day2 {
+  margin-top: 2.2rem;
+}
+
+.table-heading{
+  margin: 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.1rem;
+  color: white;
+}
+
+#table-heading2{
+  color: black;
+}
+
+.table-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+.sub-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#table1 {
+  margin-right: 12rem;
+}
+
+.table-subheading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin-bottom: 2.2rem;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.table-col1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.table-col2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #74756F;
 }
 
 .sponsor-rows{
@@ -122,39 +269,45 @@ body{
   height: 13rem;
 }
 
-.events{
-  justify-content: center;
-  align-items: center;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .event-header{
-  padding-right: 100px;
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 92%;
+  width: 100%;
   background-color: #1B1AFE;
-  height: 72px;
   box-shadow: 0px 4px 10px #74756F;
   display: flex;
   flex-direction: row;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
-.header-content1 {
-  margin-right: 25px;
-  margin-left: 25px;
+.header-content {
+  margin-right: 1.25rem;
+  margin-left: 1rem;
   cursor: pointer;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2.2rem;
+  color: black;
+  padding: 1.125rem 0.125rem 1.125rem 0.125rem;
+  margin-bottom: 0px;
 }
 
-.header-content1:hover {
-  text-decoration: underline;
+.header-content:hover {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: black;
+}
+
+.event-category {
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+#all-event-heading {
+  color: white;
 }
 
 #all-events-content {
@@ -172,28 +325,8 @@ body{
 
 .event-images {
   width: 30%;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
-
-
-
-
-
-/* * {
-  box-sizing: border-box;
-} */
-/* @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap"); */
-
-/* .headings {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 88px;
-  color: #151419;
-  margin-bottom: 50px;
-  padding-top: 7%;
-}  */
 
 .sub-headings {
   font-family: Montserrat;
@@ -209,40 +342,8 @@ body{
   color: #1b1afe;
 }
 
-.para {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #74756f;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  text-align: justify;
-}
-
-/* .event-header {
-  align-items: center;
-  align-content: center;
-  background-color: #1b1afe;
-  box-shadow: 0px 4px 10px #74756f;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 5.037783375314861vw;
-  margin-top: 3.2552083333333335vw;
-} */
-
-.header-content {
-  padding: 1.1393229166666667vw;
-  margin-right: 25px;
-  margin-left: 25px;
-  cursor: pointer;
-  line-height: 37px;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
+#lower-headers {
+  color: white;
 }
 
 .footer-upper {
