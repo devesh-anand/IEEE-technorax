@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--Important Meta Tags-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Technorax V7.0, IEEE ADGITM, Events" />
+    <meta http-equiv="refresh" content="360" />
+    <meta description="" content="" />
+
+    <!--Linking Stylesheets-->
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOOTSTRAP STYLESHEET -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Icons-->
+    <!--FontAwesome Icons Kit-->
+    <script
+      src="https://kit.fontawesome.com/e5493f8028.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+
+    <!--TITLE OF THE WEBPAGE-->
+    <title>Speakers | Technorax V7.0</title>
+    <style>
+      .wrapper-body {
+        height: 100%;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+      }
+
+      .wrapper {
+        position: relative;
+        flex-grow: 1;
+        margin: auto;
+        max-width: 1200px;
+        max-height: 1200px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 2vmin;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .s-img {
+        z-index: 1;
+        grid-column: span 2;
+        max-width: 100%;
+        margin-bottom: -52%;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        transform: scale(1);
+        transition: all 0.25s;
+      }
+
+      .s-img:nth-child(7n + 1) {
+        grid-column: 2 / span 2;
+      }
+
+      .s-img:hover {
+        z-index: 2;
+        transform: scale(2);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/ieeelogo.png" class="navbar-icons" />
+      <div class="menu">
+        <div id="menu-items">
+          <a href="#about" class="menu-item">ABOUT</a>
+          <a href="#schedule" class="menu-item">SCHEDULE</a>
+          <a href="#speakers" class="menu-item">SPEAKERS</a>
+          <a href="#events" class="menu-item">EVENTS</a>
+        </div>
+        <div class="icons">
+          <img
+            src="images/menuicon.png"
+            class="navbar-icons"
+            id="menu-icon"
+            onclick="openmenu()"
+          />
+          <img
+            src="images/menuicon2.png"
+            class="navbar-icons"
+            id="menu-icon2"
+            onclick="closemenu()"
+          />
+        </div>
+      </div>
+    </nav>
+
+    <div id="speakers" class="sections">
+      <h1 class="headings" style="margin-bottom: 0">
+        <span class="black-heading">SPEAKERS</span>
+        <span class="blue-heading"> AND </span>
+        <span class="black-heading">MENTORS</span>
+      </h1>
+    </div>
+    <br /><br /><br /><br />
+    <div class="wrapper-body">
+      <div class="wrapper">
+        <img class="s-img" src="images/sampleevent1.png" alt="" />
+        <img class="s-img" src="images/sampleevent2.png" alt="" />
+        <img class="s-img" src="images/sampleevent1.png" alt="" />
+        <img class="s-img" src="images/sampleevent2.png" alt="" />
+        <img class="s-img" src="images/sampleevent1.png" alt="" />
+        <img class="s-img" src="images/sampleevent2.png" alt="" />
+        <img class="s-img" src="images/sampleevent1.png" alt="" />
+        <img class="s-img" src="images/sampleevent2.png" alt="" />
+        <img class="s-img" src="images/sampleevent1.png" alt="" />
+        <img class="s-img" src="images/sampleevent2.png" alt="" />
+        
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="container d-flex footer-flex">
+            <a class="footer__logo" href="index.html"
+              ><img class="footer-move-up" src="images/Logo.png" alt="logo"
+            /></a>
+            <div class="footer__site-text">
+              <h1
+                class="footer-move-up footer-heading"
+                style="text-transform: uppercase"
+              >
+                Technorax V7.O
+              </h1>
+              <h4 class="footer-move-up footer-sub-heading">
+                Flagship Tech Fest of IEEE ADGITM
+              </h4>
+            </div>
+          </div>
+          <div class="footer__get-ticket footer-move-up">
+            <a href="">RECKON-O-RAX</a>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <div class="container-footer">
+          <div class="copy-right__area">
+            <div class="copy-right__right">
+              <a href="https://www.facebook.com/ieeeadgitm"
+                ><img src="images/footer-face.png" alt="Facebook"
+              /></a>
+              <a href="https://www.instagram.com/ieeeadgitm/"
+                ><img src="images/footer-ins.png" alt="Instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/company/ieee-niec-student-branch/about/"
+                ><img src="images/footer-in.png" alt="LinkedIn"
+              /></a>
+              <a href="https://twitter.com/IeeeNiec"
+                ><img src="images/footer-twit.png" alt="Twitter"
+              /></a>
+            </div>
+            <div class="footer__menu footer-move-up copy-right__left">
+              <ul>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Become a sponsor</a></li>
+                <li><a href="">FAQs</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JS BUNDLE   -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>

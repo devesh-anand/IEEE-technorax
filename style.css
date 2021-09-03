@@ -17,6 +17,10 @@ p{
   font-family: Montserrat;
 }
 
+.anchor-class{
+  text-decoration: none;
+}
+
 /* HEADER */
 .headings {
   padding-top: 10rem;
@@ -26,6 +30,7 @@ p{
   font-weight: bold;
   font-size: 3.5rem;
   transition: 1s ease-out;
+  text-decoration: none;
 }
 
 .headings:hover {
