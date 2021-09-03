@@ -1,456 +1,552 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!--Important Meta Tags-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Technorax V7.0, IEEE ADGITM, Events" />
+    <meta http-equiv="refresh" content="360" />
+    <meta description="" content="" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
-
-    <!-- CSS only -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!--Linking Stylesheets-->
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- BOOTSTRAP STYLESHEET -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
 
-    <!--Bootsrap Icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    
-    <!--FontAwesome Icons-->
-    <script src="https://kit.fontawesome.com/e5493f8028.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <!--Icons-->
+    <!--FontAwesome Icons Kit-->
+    <script
+      src="https://kit.fontawesome.com/e5493f8028.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>Technorax V7.0</title>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+
+    <!--TITLE OF THE WEBPAGE-->
+    <title>IEEE | Technorax V7.0</title>
   </head>
   <body>
-    <div class="main">
-      <header class="head">
-        <nav class="navbar">
-          <img src="ieeelogo.png" class="navbar-icons">
-          <div class="menu">
-            <div id="menu-items">
-              <h4 class="menu-item">ABOUT</h4>
-              <h4 class="menu-item">EVENTS</h4>
-              <h4 class="menu-item">SPEAKERS</h4>
-              <h4 class="menu-item">SCHEDULE</h4>
+      <!--NAVBAR & HEADER (NAVBAR CORRECTION REQ.)-->
+      <title>Technorax V7.0</title>
+    </head>
+    <body>
+      <div class="main">
+        <header class="head">
+          <nav class="navbar">
+            <img src="images/ieeelogo.png" class="navbar-icons">
+            <div class="menu">
+              <div id="menu-items">
+                <a href="#about" class="menu-item">ABOUT</a>
+                <a href="#schedule" class="menu-item">SCHEDULE</a>
+                <a href="#speakers" class="menu-item">SPEAKERS</a>
+                <a href="#events" class="menu-item">EVENTS</a>
+                
+              </div>
+              <div class="icons">
+                <img src="images/menuicon.png" class="navbar-icons" id="menu-icon" onclick="openmenu()">
+                <img src="images/menuicon2.png" class="navbar-icons" id="menu-icon2" onclick="closemenu()">
+              </div>
             </div>
-            <div class="icons">
-              <img src="menuicon.png" class="navbar-icons" id="menu-icon" onclick="openmenu()">
-              <img src="menuicon2.png" class="navbar-icons" id="menu-icon2" onclick="closemenu()">
-            </div>
+          </nav>
+          <hr class= "navline">
+        </header>
+        <div class="top">
+          <div class="thead">
+            <h5 class="top-heading">TECHNORAX</h5>
+            <h5 class="top-heading">V7.0</h5>
           </div>
-        </nav>
-        <hr class=navline>
-      </header>
-      <div class="top">
-        <div class="thead">
-          <h5 class="top-heading">TECHNORAX</h5>
-          <h5 class="top-heading">V7.0</h5>
+          <div class="timg">
+            <img class="tech-img" src="images/techfest.png">
+          </div>
+          <button class="rec-reg">
+            <h5 class="rec-text"> <span>RECON-O-RAX</span> </h5>
+          </button>
         </div>
-        <div class="timg">
-          <img class="tech-img" src="techfest.png">
+
+        <!--IEEE DAY SECTION (CAROUSEL TO BE ADDED)-->
+        <div class= "sections" id="about">
+            <h1 class="headings"><span class="blue-heading">IEEE</span> <br>DAY</br> </h1>
+            <p>IEEE Day is celebrating the first time in <br> history when engineers worldwide and <br> IEEE members gathered to share their <br> technical ideas in 1884......</p>
         </div>
-        <button class="rec-reg">
-          <h5 class="rec-text">RECON-O-RAX</h5>
-        </button>
-      </div>
-      <div class=sections id="schedule">
-        <h1 class="headings">TECHNORAX <span class="event-heading">SCHEDULE</span></h1>
-        <div class="schedule-tables">
-          <div id="day1"  class="table">
-            <div class="schedule-header">
-              <h5 class="table-heading">DAY 1</h5>
-              <h5 class="table-heading" id="table-heading2">29TH SEPTEMBER</h5>
-            </div>
-            <div class="table-content">
-              <div class=sub-table id="table1">
-                <div>
-                  <h3 class="table-subheading">T-HACKS</h3>
+
+        <!--TECHNORAX-SCHEDULE-->
+        <div class= "sections" id="schedule">
+            <h1 class="headings">TECHNORAX <span class="blue-heading">SCHEDULE</span></h1>
+            <div class="schedule-tables">
+              <div id="day1"  class="table">
+                <div class="schedule-header">
+                  <h5 class="table-heading">DAY 1</h5>
+                  <h5 class="table-heading" id="table-heading2">29TH SEPTEMBER</h5>
                 </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Opening Ceremony</p>
+                <div class="table-content">
+                  <div class=sub-table id="table1">
+                    <div>
+                      <h3 class="table-subheading">T-HACKS</h3>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Opening Ceremony</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>10:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Hackathon Begins</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>11:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Mentoring Round</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>3:00 PM</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="table-col2">
-                    <p>10:00 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Hackathon Begins</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>11:00 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Mentoring Round</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>3:00 PM</p>
+                  <div class=sub-table id="table2">
+                    <div>
+                      <h3 class="table-subheading">RECON-O-RAX</h3>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Quiz Start</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>11:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Quiz Ends</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>11:30 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Results of Quiz</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>12:00 PM</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class=sub-table id="table2">
-                <div>
-                  <h3 class="table-subheading">RECON-O-RAX</h3>
+              <div id="day2" class="table">
+                <div class="schedule-header">
+                  <h5 class="table-heading">DAY 2</h5>
+                  <h5 class="table-heading" id="table-heading2">30TH SEPTEMBER</h5>
                 </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Quiz Start</p>
+                <div class="table-content">
+                  <div class=sub-table id="table1">
+                    <div>
+                      <h3 class="table-subheading">T-HACKS</h3>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Opening Ceremony</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>10:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Hackathon Begins</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>11:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Mentoring Round</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>3:00 PM</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="table-col2">
-                    <p>11:00 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Quiz Ends</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>11:30 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Results of Quiz</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>12:00 PM</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="day2" class="table">
-            <div class="schedule-header">
-              <h5 class="table-heading">DAY 2</h5>
-              <h5 class="table-heading" id="table-heading2">30TH SEPTEMBER</h5>
-            </div>
-            <div class="table-content">
-              <div class=sub-table id="table1">
-                <div>
-                  <h3 class="table-subheading">T-HACKS</h3>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Opening Ceremony</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>10:00 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Hackathon Begins</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>11:00 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Mentoring Round</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>3:00 PM</p>
-                  </div>
-                </div>
-              </div>
-              <div class=sub-table id="table2">
-                <div>
-                  <h3 class="table-subheading">RECON-O-RAX</h3>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Quiz Start</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>11:00 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Quiz Ends</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>11:30 AM</p>
-                  </div>
-                </div>
-                <div class="table-row">
-                  <div class="table-col1">
-                    <p>Results of Quiz</p>
-                  </div>
-                  <div class="table-col2">
-                    <p>12:00 PM</p>
+                  <div class=sub-table id="table2">
+                    <div>
+                      <h3 class="table-subheading">RECON-O-RAX</h3>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Quiz Start</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>11:00 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Quiz Ends</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>11:30 AM</p>
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-col1">
+                        <p>Results of Quiz</p>
+                      </div>
+                      <div class="table-col2">
+                        <p>12:00 PM</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id="sponsors" class="sections">
-      <h1 class="headings">OUR <span class="event-heading">SPONSORS</span></h1>
-      <div class="sponsor-rows">
-        <div class=srow>
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-        </div>
-        <div class=srow>
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-          <img class="sponsor-image" src="samplesponsor1.png">
-          <img class="sponsor-image" src="samplesponsor2.png">
-        </div>
-      </div>
-      </div>
-      <div id="events" class="sections">
-      <h1 class="headings">OUR <span class="event-heading">EVENTS</span></h1>
-      <div class="event-header">
-        <div class="event-category" id="all">
-            <h5 class="header-content" id="all-event-heading" onclick="allcontent()">ALL EVENTS </h5>
-        </div>
-        <div id="thacks">
-            <h5 class="header-content" id="thacks-heading" onclick="thacks()">T-HACKS</h5>
-        </div>
-        <div id="recon-o-rax">
-            <h5 class="header-content" id="rec-heading" onclick="recno()">RECON-O-RAX </h5>
-        </div>
-      </div>
-      <div id="all-events-content">
-        <img class="event-images" src="sampleevent1.png">
-        <img class="event-images" src="sampleevent2.png">
-      </div>
-      <div id="thacks-content">
-        <img class="event-images" src="sampleevent1.png">
-      </div>
-      <div id="rec-content">
-        <img class="event-images" src="sampleevent2.png">
-      </div>
-      </div>
 
-      <!--................................... -->
-
-      <div id="hack-themes" class="sections">
-        <div>
-          <h1 class="headings">
-            <span class="first-word">THEMES</span> OF THE HACKATHON
-          </h1>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Open Innovation</h1>
-            <p class="para">
-              An open-ended theme where the only restriction is your imagination.
-              Build the ideas that you believe in and make a difference. It can
-              either be hardware or software.
-            </p>
+          <!--SPEAKERS AND MENTORS SECTION-->
+          <div id="speakers" class="sections">
+            <h1 class="headings" style="margin-bottom:o"><span class="blue-heading">SPEAKERS</span> AND <span class="blue-heading">MENTORS</span></h1>
           </div>
 
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Augmented and Virtual Reality</h1>
-            <p class="para">
-              Ride the rising wave of Augmented and Virtual Reality to build ideas
-              across diverse sectors. For AR/VR we have echoAR, which is a cloud
-              platform that provides tools and server-side infrastructure to help
-              developers quickly build and deploy 3D apps and content.
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Machine Learning Enthusiasts</h1>
-            <p class="para">
-              For all the Machine Learning enthusiasts, we have Matic, which
-              provides scalable & instant Ethereum transactions using sidechains
-              simplifying interactions between users and the decentralized world.
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Application</h1>
-            <p class="para">
-              For Application we have Portis by ShapeShift, the non-custodial
-              wallet that makes decentralized apps simple for everyone.
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Payment Interface</h1>
-            <p class="para">
-              For Payment Interface, we have Fold, all new banking experience.
-              Fold is a digital-only bank that’s transparent, fast and powerful.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div id="prizes" class="sections">
-        <div>
-          <h1 class="headings">
-            <span class="first-word">PRIZES</span> AND
-            <span class="first-word">AWARDS</span>
-          </h1>
-        </div>
-        <div class="event-header">
-          <h5 id="lower-headers" class="header-content">T-HACK PRIZES </h4>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">IEEE ADGITM GRAND PRIZE</h1>
-            <p class="para">
-              Top Three winning teams will be provided with a cash prize Worth Rs.
-              10000
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Progate Award</h1>
-            <p class="para">
-              1. 1st Winner will get 1 month Progate plus free subscription +
-              Winning certification from Progate <br />
-              2. 2nd Winner will get 1 Week Progate plus free subscription +
-              Winning certification from Progate <br />
-              3. 3rd Winner will get 1 Week Progate plus free subscription +
-              Winning certification from Progate
-            </p>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">1Password Award</h1>
-            <p class="para">
-              Top Three Winning Teams Will be provided with a 1Password families
-              membership free for 1 year
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">
-              EchoAr API Prize <br />
-              (Only AR/VR Projects)
-            </h1>
-            <p class="para">
-              1. 50$ Amazon Gift Card <br />
-              2. 1-Month free Business Tier access <br />
-              3. A feature in our newsletter(Sent to investors and AR/VR
-              ecosystem)
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Wolfram Award</h1>
-            <p class="para">
-              Top 10 winning teams will be giving Free Wolfram | One plus edition
-              Subscription for 1 year
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Axure Award</h1>
-            <p class="para">
-              Top Three Winners will get a Free 1 year Subscription License of
-              Axure RP Team Edition
-            </p>
-          </div>
-        </div>
-
-        <div class="event-header">
-          <h5 id="lower-headers" class="header-content">RECON-O-RAX PRIZES </h4>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">IEEE ADGITM GRAND PRIZE</h1>
-            <p class="para">
-              Top Two winning teams will be provided with a cash prize Worth Rs. 5000
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-sm-6">
-            <h1 class="sub-headings">Clerky Award</h1>
-            <p class="para">
-              Winner of the quiz will be awarded with clerky family membership for startup setup worth 799$
-            </p>
-          </div>
-          </div>
-      </div>
-
-      <!-- Footer -->
-      <footer>
-          <div class="footer-upper">
-            <div class="footer-content">
-              <img class = "footer-image" src=footer-logo.png alt="Footer-Logo">
-              <h1 class="footer-heading">Technorax V7.0</h1>
-              <p class="footer-subheading">Flagship TechFest of IEEE ADGITM</p>
-          </div>
-          </div>
-          <div class="footer-lower">
-          <div class ="flex-container">
-            <div class ="flex-item-start">
-              <div class = "footer-links">
-                <a href=#>Contacts</a>
-                <a href=#>Be A Sponsor</a>
-                <a href=#>FAQs</a>
+          <!--SPONSORS-->
+          <div id="sponsors" class="sections">
+            <h1 class="headings">OUR <span class="blue-heading">SPONSORS</span></h1>
+            <div class="sponsor-rows">
+              <div class=srow>
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+              </div>
+              <div class=srow>
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
+                <img class="sponsor-image" src="images/samplesponsor1.png">
+                <img class="sponsor-image" src="images/samplesponsor2.png">
               </div>
             </div>
-
-            <div class="flex-item-end">
-              <div class = "social-buttons">
-                <ul class="social-icons">
-                  <a class="twitter" href="#"><i class="fab fa-twitter-square"></i></a>
-                  <a class="instagram" href="#"><i class="fab fa-instagram-square"></i></a>
-                  <a class="facebook" href="#"><i class="fab fa-facebook-square"></i></a>
-                  <a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a>
-                </ul> 
-              </div>
             </div>
-          </div>
-          </div>
-      </footer>
-    </div>
-    <script src="index.js" charset="utf-8"></script>
-    <!-- JavaScript Bundle with Popper -->
+
+            <!--EVENTS SECTION-->
+            <div id="events" class="sections">
+                <h1 class="headings">OUR <span class="blue-heading">EVENTS</span></h1>
+                <div class="event-header">
+                  <div class="event-category" id="all">
+                      <h5 class="header-content" id="all-event-heading" onclick="allcontent()">ALL EVENTS </h5>
+                  </div>
+                  <div id="thacks">
+                      <h5 class="header-content" id="thacks-heading" onclick="thacks()">T-HACKS</h5>
+                  </div>
+                  <div id="recon-o-rax">
+                      <h5 class="header-content" id="rec-heading" onclick="recno()">RECON-O-RAX </h5>
+                  </div>
+                </div>
+                <div id="all-events-content">
+                  <img class="event-images" src="images/sampleevent1.png">
+                  <img class="event-images" src="images/sampleevent2.png">
+                </div>
+                <div id="thacks-content">
+                  <img class="event-images" src="images/sampleevent1.png">
+                </div>
+                <div id="rec-content">
+                  <img class="event-images" src="images/sampleevent2.png">
+                </div>
+                </div>
+
+                <!--THEMES AND PRIZES SECTION-->
+                <div id="hack-themes" class="sections">
+                    <div>
+                      <h1 class="headings">
+                        <span class="blue-heading">THEMES</span class="blue-heading"> OF THE HACKATHON
+                      </h1>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Open Innovation</h1>
+                        <p>
+                          An open-ended theme where the only restriction is your imagination.
+                          Build the ideas that you believe in and make a difference. It can
+                          either be hardware or software.
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Augmented and Virtual Reality</h1>
+                        <p>
+                          Ride the rising wave of Augmented and Virtual Reality to build ideas
+                          across diverse sectors. For AR/VR we have echoAR, which is a cloud
+                          platform that provides tools and server-side infrastructure to help
+                          developers quickly build and deploy 3D apps and content.
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Machine Learning Enthusiasts</h1>
+                        <p>
+                          For all the Machine Learning enthusiasts, we have Matic, which
+                          provides scalable & instant Ethereum transactions using sidechains
+                          simplifying interactions between users and the decentralized world.
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Application</h1>
+                        <p>
+                          For Application we have Portis by ShapeShift, the non-custodial
+                          wallet that makes decentralized apps simple for everyone.
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Payment Interface</h1>
+                        <p>
+                          For Payment Interface, we have Fold, all new banking experience.
+                          Fold is a digital-only bank that’s transparent, fast and powerful.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div id="prizes" class="sections">
+                    <div>
+                      <h1 class="headings">
+                        <span class="blue-heading">PRIZES</span> AND <span class="blue-heading">AWARDS</span>
+                      </h1>
+                    </div>
+                    <div class="event-header">
+                      <h5 id="lower-headers" class="header-content">T-HACK PRIZES </h4>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">IEEE ADGITM GRAND PRIZE</h1>
+                        <p>
+                          Top Three winning teams will be provided with a cash prize Worth Rs.
+                          10000
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Progate Award</h1>
+                        <p>
+                          1. 1st Winner will get 1 month Progate plus free subscription +
+                          Winning certification from Progate <br />
+                          2. 2nd Winner will get 1 Week Progate plus free subscription +
+                          Winning certification from Progate <br />
+                          3. 3rd Winner will get 1 Week Progate plus free subscription +
+                          Winning certification from Progate
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">1Password Award</h1>
+                        <p>
+                          Top Three Winning Teams Will be provided with a 1Password families
+                          membership free for 1 year
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">
+                          EchoAr API Prize <br />
+                          (Only AR/VR Projects)
+                        </h1>
+                        <p>
+                          1. 50$ Amazon Gift Card <br />
+                          2. 1-Month free Business Tier access <br />
+                          3. A feature in our newsletter(Sent to investors and AR/VR
+                          ecosystem)
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Wolfram Award</h1>
+                        <p>
+                          Top 10 winning teams will be giving Free Wolfram | One plus edition
+                          Subscription for 1 year
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Axure Award</h1>
+                        <p>
+                          Top Three Winners will get a Free 1 year Subscription License of
+                          Axure RP Team Edition
+                        </p>
+                      </div>
+                    </div>
+            <br>
+                    <div class="event-header">
+                      <h5 id="lower-headers" class="header-content">RECON-O-RAX PRIZES </h4>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">IEEE ADGITM GRAND PRIZE</h1>
+                        <p>
+                          Top Two winning teams will be provided with a cash prize Worth Rs. 5000
+                        </p>
+                      </div>
+            
+                      <div class="col-lg-4 col-md-4 col-sm-6">
+                        <h1 class="sub-headings">Clerky Award</h1>
+                        <p>
+                          Winner of the quiz will be awarded with clerky family membership for startup setup worth 799$
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+            
+                <!-- FOOTER -->
+                <footer>
+                    <div class="container">
+                        <div class="footer ">
+                            <div class="container d-flex footer-flex">
+                              <a class="footer__logo" href="index.html"><img class="footer-move-up" src="images/Logo.png" alt="logo" ></a>
+                            <div class="footer__site-text">
+                                <h1 class="footer-move-up footer-heading" style="text-transform: uppercase">Technorax V7.O</h1>
+                                <h4 class="footer-move-up footer-sub-heading">Flagship Tech Fest of IEEE ADGITM</h4>
+                            </div>
+                            </div>
+                            <div class="footer__get-ticket footer-move-up">
+                                <a href="">RECKON-O-RAX</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="copy-right">
+                        <div class="container-footer">
+                            <div class="copy-right__area">
+                              <div class="copy-right__right">
+                                <a href="https://www.facebook.com/ieeeadgitm"><img src="images/footer-face.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/ieeeadgitm/"><img src="images/footer-ins.png" alt="Instagram"></a>
+                                <a href="https://www.linkedin.com/company/ieee-niec-student-branch/about/"><img src="images/footer-in.png" alt="LinkedIn"></a>
+                                <a href="https://twitter.com/IeeeNiec"><img src="images/footer-twit.png" alt="Twitter"></a>
+                            </div>
+                                  <div class="footer__menu footer-move-up copy-right__left">
+                                    <ul>
+                                      <li><a href="">Contact Us</a></li>
+                                      <li><a href="">Become a sponsor</a></li>
+                                      <li><a href="">FAQs</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+    <!-- JS BUNDLE   -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
