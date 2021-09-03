@@ -13,6 +13,10 @@ body {
   background-color: #ffffff;
 }
 
+.black-heading{
+  color: #000000;
+}
+
 p{
   font-family: Montserrat;
 }
